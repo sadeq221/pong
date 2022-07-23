@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pong</title>
+    <link rel="stylesheet" href="/pong.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="/jQueryColor.js"></script>
+</head>
+
+<body>
+
+    <div id="letHimChoose">
+        <h1>Hello Dear Friend,</h1>
+        <h2>First, Choose whom you want to play with</h2>
+        <div>
+            <button class="chooseBtn" id="friendly">Friendly</button>
+            <button class="chooseBtn" id="system">System</button>
+        </div>
+
+    </div>
+
+    <div id="container">
+        <span class="mark" id="userMark">0</span>
+        <span class="mark" id="systemMark">0</span>
+        <div class="paddle" id="leftPaddle"></div>
+        <div id="net"></div>
+        <div class="paddle" id="rightPaddle"></div>
+        <div id="ball"></div>
+    </div>
+    <!-- <button id="stopBtn">Stop</button> -->
+
+    <script src="/pong.js"></script>
+</body>
+
+</html>
