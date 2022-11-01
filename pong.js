@@ -17,8 +17,8 @@ leftPaddle.css("top", "107px");
 // Lets Gooooo !!!
 
 
-chBtns.each(function() {
-    $(this).on("click", function() {
+chBtns.each(function () {
+    $(this).on("click", function () {
 
         // Declares
 
@@ -127,7 +127,7 @@ chBtns.each(function() {
 
                 ball.css({
                     "top": `${Math.floor(Math.random() * 650)}px`,
-                    "left": `${containerRect.width / 2 -19}px`
+                    "left": `${containerRect.width / 2 - 19}px`
                 })
 
                 setTimeout(functionsArr[Math.floor(Math.random() * 2) + 2], 1000)
@@ -204,7 +204,7 @@ chBtns.each(function() {
 
                 ball.css({
                     "top": `${Math.floor(Math.random() * 650)}px`,
-                    "left": `${containerRect.width / 2 -19}px`
+                    "left": `${containerRect.width / 2 - 19}px`
                 })
 
                 // 1 of 2 left functions is excuted randomly
@@ -262,7 +262,7 @@ chBtns.each(function() {
 
                 ball.css({
                     "top": `${Math.floor(Math.random() * 650)}px`,
-                    "left": `${containerRect.width / 2 -19}px`
+                    "left": `${containerRect.width / 2 - 19}px`
                 })
 
                 setTimeout(functionsArr[Math.floor(Math.random() * 2)], 1000)
@@ -311,14 +311,14 @@ chBtns.each(function() {
             let upPressed = false;
             let downPressed = false;
 
-            $(window).keydown(function(k) {
+            $(window).keydown(function (k) {
                 if (k.key == "ArrowUp") {
                     upPressed = true;
                 } else if (k.key == "ArrowDown") {
                     downPressed = true;
                 }
             })
-            $(window).keyup(function(k) {
+            $(window).keyup(function (k) {
                 if (k.key == "ArrowUp" || k.key == "ArrowDown") {
                     upPressed = false;
                     downPressed = false;
@@ -347,14 +347,14 @@ chBtns.each(function() {
             let wPressed = false;
             let sPressed = false;
 
-            $(window).keydown(function(k) {
+            $(window).keydown(function (k) {
                 if (k.key == "w") {
                     wPressed = true;
                 } else if (k.key == "s") {
                     sPressed = true;
                 }
             })
-            $(window).keyup(function(k) {
+            $(window).keyup(function (k) {
                 if (k.key == "w" || k.key == "s") {
                     wPressed = false;
                     sPressed = false;

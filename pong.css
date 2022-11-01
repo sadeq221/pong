@@ -4,8 +4,34 @@
 }
 
 body {
-    background-color: rgb(51, 51, 58);
+    color: #373737;
+    background-color: #13795b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.desktopOnly {
+    display: none;
+    background-color: #d2f4ea;
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 100px auto;
+}
+
+@media only screen and (max-width: 900px) {
+    #container {
+        display: none;
+    }
+
+    .desktopOnly {
+        display: block;
+        background-color: #d2f4ea;
+    }
+}
+
 
 #letHimChoose {
     position: absolute;
@@ -17,7 +43,7 @@ body {
     width: 500px;
     height: 210px;
     border-radius: 40px;
-    background-color: #fff;
+    background-color: #d2f4ea;
     text-align: center;
     z-index: 1;
 }
@@ -32,26 +58,25 @@ body {
 
 .chooseBtn {
     display: inline-block;
-    border: 1px solid rgb(92, 92, 92);
+    border: 1px solid #13795b;
     width: 120px;
     height: 50px;
     margin: 20px 10px;
     font-size: 25px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #d2f4ea;
 }
 
 .chooseBtn:hover {
-    background-color: rgb(188, 188, 188);
+    background-color: #20c9965e;
 }
 
 #container {
-    margin: 0 auto;
     position: relative;
     width: 95%;
-    height: 98vh;
+    height: 100vh;
     padding: 0 20px;
-    background-color: rgb(51, 51, 58);
+    background-color: #13795b;
 }
 
 .mark {
@@ -70,11 +95,26 @@ body {
 }
 
 .paddle {
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     top: calc(50% - 45px);
     width: 30px;
     height: 120px;
     background-color: #fff;
+}
+
+.paddle span {
+    font-weight: 700;
+    color: #13795b;
+}
+
+#rightPaddle span {
+    font-weight: 900;
+    font-size: 23px;
 }
 
 #leftPaddle {
